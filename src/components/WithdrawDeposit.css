@@ -1,0 +1,77 @@
+/* WithdrawDeposit.css */
+
+/* Container styling */
+.account-details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between account cards */
+  }
+  
+  /* Account card styling */
+  .account-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover effect for account cards */
+  .account-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Typography styling for account details */
+  .account-card strong {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .account-card .MuiTypography-root {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  /* Input and button styling */
+  .MuiTextField-root {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .MuiButton-root {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: none; /* Disable uppercase text */
+    border-radius: 4px;
+  }
+  
+  /* Deposit and withdraw buttons spacing */
+  .MuiButton-root:first-of-type {
+    margin-right: 10px;
+  }
+  
+  /* Message styling */
+  .MuiTypography-root {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  /* Responsive design for mobile */
+  @media screen and (max-width: 768px) {
+    .account-details {
+      gap: 15px;
+    }
+  
+    .account-card {
+      padding: 15px;
+    }
+  
+    .MuiButton-root {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

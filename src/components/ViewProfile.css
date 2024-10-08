@@ -1,0 +1,120 @@
+/* ViewProfile.css */
+
+/* General layout */
+.view-profile {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #232f3e; /* Amazon-like dark background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #232f3e; /* Dark background for sidebar */
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar button {
+    background-color: #37475a; /* Darker shade for buttons */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .sidebar button:hover {
+    background-color: #485769; /* Lighter shade on hover */
+  }
+  
+  .sidebar button:focus {
+    outline: none;
+    background-color: #ff9900; /* Orange color for selected buttons */
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Card style for account, loan, and FD details */
+  .MuiCard-root {
+    background-color: #f8f9fa; /* Light background for card */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .MuiTypography-root {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .MuiTypography-root:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Container */
+  .MuiContainer-root {
+    margin-top: 20px;
+  }
+  
+  .MuiTypography-h5 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* Mobile responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .view-profile {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  
+    .MuiCard-root {
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  }
+  

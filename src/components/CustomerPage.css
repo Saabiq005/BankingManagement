@@ -1,0 +1,73 @@
+.customer-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #232f3e; /* Dark Amazon blue */
+    color: white;
+  }
+  
+  .account-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .balance-box {
+    background-color: #f8f8f8; /* Light grey background for boxes */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .balance-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .services button {
+    width: 200px;
+    background-color: #ff9900; /* Amazon orange */
+    color: white;
+  }
+  
+  .services button:hover {
+    background-color: #e68a00; /* Darker Amazon orange on hover */
+  }
+  
+  .footer {
+    background-color: #232f3e; /* Same dark blue as the header */
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+  .card {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
