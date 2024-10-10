@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 const SendMoneytoOthers = () => {
   const API_KEY = process.env.REACT_APP_FIREBASE_API_KEY;
   const PROJECT_ID = process.env.REACT_APP_FIREBASE_PROJECT_ID;
